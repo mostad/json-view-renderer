@@ -2,7 +2,7 @@
 
 namespace Mostad\JsonViewRenderer;
 
-use Psr\Container\ContainerInterface;
+use Interop\Container\ContainerInterface;
 use Zend\Expressive\Template\DefaultParamsTrait;
 use Zend\Expressive\Template\TemplateRendererInterface;
 

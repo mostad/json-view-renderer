@@ -2,7 +2,7 @@
 
 namespace Mostad\JsonViewRenderer;
 
-use Psr\Container\ContainerInterface;
+use Interop\Container\ContainerInterface;
 
 /**
  * @package Mostad\JsonViewRenderer
