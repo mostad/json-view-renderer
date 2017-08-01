@@ -15,13 +15,20 @@ abstract class AbstractJsonView implements JsonSerializable, JsonViewInterface
     protected $data;
 
     /**
-     * @param array $data
-     *
-     * @return self
+     * @var int
      */
-    public function render(array $data = [])
+    protected $depth;
+
+    /**
+     * @param array $data
+     * @param int   $depth
+     *
+     * @return AbstractJsonView
+     */
+    public function render(array $data = [], $depth = 0)
     {
-        $this->data = $data;
+        $this->data  = $data;
+        $this->depth = $depth;
 
         return $this;
     }
