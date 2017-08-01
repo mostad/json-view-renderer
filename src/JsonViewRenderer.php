@@ -35,7 +35,7 @@ final class JsonViewRenderer implements TemplateRendererInterface
      *
      * @return string
      */
-    public function render($name, $params = [], $depth = 0)
+    public function render($name, $params = [], $depth = 1)
     {
         /** @var AbstractJsonView $view */
         $view = $this->viewManager->get($name);

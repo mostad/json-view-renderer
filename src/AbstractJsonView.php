@@ -25,10 +25,10 @@ abstract class AbstractJsonView implements JsonSerializable, JsonViewInterface
      *
      * @return AbstractJsonView
      */
-    public function render(array $data = [], $depth = 0)
+    public function render(array $data = [], $depth = 1)
     {
         $this->data  = $data;
-        $this->depth = $depth;
+        $this->depth = $depth - 1;
 
         return $this;
     }
